@@ -3,6 +3,7 @@ package org.example.fleetManagement.usecaseLayer.impl;
 import lombok.AllArgsConstructor;
 import org.example.fleetManagement.domainLayer.*;
 import org.example.fleetManagement.domainLayer.BranchManager;
+import org.example.fleetManagement.domainLayer.exceptions.VehicleTypeNotSupportedException;
 import org.example.fleetManagement.usecaseLayer.AddVehicle;
 import org.example.fleetManagement.usecaseLayer.dtos.AddVehicleInputDto;
 import org.example.fleetManagement.usecaseLayer.dtos.AddVehicleOutputDto;
@@ -16,6 +17,11 @@ public class AddVehicleImpl implements AddVehicle {
         Vehicle vehicle = new Vehicle(addVehicleInputDto.getVehicleId(),
                 new Price(addVehicleInputDto.getPrice()),
                 VehicleType.valueOf(addVehicleInputDto.getVehicleType()));
-        return new AddVehicleOutputDto(branchManager.addVehicle(branch, vehicle));
+        try {
+            branchManager.addVehicle(branch, vehicle);
+            return new AddVehicleOutputDto(true);
+        } catch (VehicleTypeNotSupportedException exception) {
+            return new AddVehicleOutputDto(false);
+        }
     }
 }

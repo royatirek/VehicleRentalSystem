@@ -9,10 +9,7 @@ import org.example.fleetManagement.domainLayer.BranchManagerImpl;
 import org.example.fleetManagement.domainLayer.repositories.impl.BranchRepositoryImpl;
 import org.example.fleetManagement.domainLayer.strategies.impl.VehicleLowestPriceSelectionStrategy;
 import org.example.fleetManagement.domainLayer.strategies.impl.VehicleOrderingByPriceStrategy;
-import org.example.fleetManagement.usecaseLayer.impl.AddBranchImpl;
-import org.example.fleetManagement.usecaseLayer.impl.AddVehicleImpl;
-import org.example.fleetManagement.usecaseLayer.impl.DisplayVehicleImpl;
-import org.example.fleetManagement.usecaseLayer.impl.GetAvailableVehicleByTypeImpl;
+import org.example.fleetManagement.usecaseLayer.impl.*;
 import org.example.inputcommandManagement.adapters.AddBranchAdapter;
 import org.example.inputcommandManagement.adapters.AddVehicleAdapter;
 import org.example.inputcommandManagement.adapters.BookVehicleAdapter;
@@ -46,7 +43,7 @@ public class InputCommandFactory {
 
         BookingManager bookingManager = new BookingManagerImpl(
                 new GetAvailableVehicleByTypeImpl(branchManager),
-                new BookingRepositoryImpl());
+                new BookingRepositoryImpl(), new BlockTimeSlotImpl(branchManager));
 
         mapOfStringAndCommands.put("BOOK", new BookVehicleCommand(
                 new BookVehicleAdapter(new BookVehicleImpl(bookingManager))));

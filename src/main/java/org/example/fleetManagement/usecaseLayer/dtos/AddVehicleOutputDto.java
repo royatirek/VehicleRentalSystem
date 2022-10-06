@@ -6,5 +6,5 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class AddVehicleOutputDto {
-    Boolean isSuccess;
+    private Boolean isSuccess;
 }

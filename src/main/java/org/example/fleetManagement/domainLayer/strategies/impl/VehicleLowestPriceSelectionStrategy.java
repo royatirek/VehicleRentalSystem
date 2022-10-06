@@ -1,7 +1,7 @@
 package org.example.fleetManagement.domainLayer.strategies.impl;
 
 import org.example.fleetManagement.domainLayer.Vehicle;
-import org.example.fleetManagement.domainLayer.exceptions.NoVehicleFound;
+import org.example.fleetManagement.domainLayer.exceptions.NoVehicleFoundException;
 import org.example.fleetManagement.domainLayer.strategies.VehicleSelectionStrategy;
 
 import java.util.Comparator;
@@ -14,6 +14,6 @@ public class VehicleLowestPriceSelectionStrategy implements VehicleSelectionStra
         Optional<Vehicle> vehicle =  vehicles.stream().sorted(Comparator.comparing(Vehicle::getPrice)).findFirst();
         if(vehicle.isPresent())
             return vehicle.get();
-        throw new NoVehicleFound("No vehicle found based on price");
+        throw new NoVehicleFoundException("No vehicle found based on price");
     }
 }

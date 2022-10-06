@@ -23,19 +23,27 @@ public class BranchManagerImpl implements BranchManager {
         return branch.addVehicle(vehicle);
     }
     @Override
-    public Branch getBranchByName(String id) {
-        return branchRepository.getBranchById(id);
+    public Branch getBranchByName(String branchName) {
+        return branchRepository.getBranchById(branchName);
     }
 
     @Override
-    public List<Vehicle> getAllVehicles(Branch branch, TimeSlot timeSlot) {
+    public List<Vehicle> getVehicles(Branch branch, TimeSlot timeSlot) {
         return vehicleOrderingStrategy.order(branch.getVehiclesForTimeSlot(timeSlot));
     }
 
     @Override
     public Vehicle getVehicle(Branch branch, VehicleType vehicleType, TimeSlot timeSlot) {
-        Vehicle vehicle =  vehicleSelectionStrategy.getSelectedVehicle(branch.getVehiclesForVehicleTypeAndTimeSlot(timeSlot, vehicleType));
-        branch.makeVehicleNonAvailaible(vehicle, new NotAvailabilityTimeSlot(timeSlot.getStartTime(), timeSlot.getEndTime()));
+        Vehicle vehicle =  vehicleSelectionStrategy.getSelectedVehicle(
+                branch.getVehiclesByTypeAndTimeSlot(timeSlot, vehicleType));
         return vehicle;
+    }
+
+    public void blockTimeSlot(Branch branch, Vehicle vehicle, TimeSlot timeSlot) {
+        branch.makeVehicleNonAvailaible(vehicle, new NotAvailabilityTimeSlot(timeSlot.getStartTime(), timeSlot.getEndTime()));
+    }
+
+    public Vehicle getVehicle(Branch branch, String vehicleId) {
+        return branch.getVehicle(vehicleId);
     }
 }

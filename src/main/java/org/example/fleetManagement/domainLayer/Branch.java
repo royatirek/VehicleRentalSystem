@@ -1,7 +1,11 @@
 package org.example.fleetManagement.domainLayer;
 
+import org.example.fleetManagement.domainLayer.exceptions.NoVehicleFoundException;
+import org.example.fleetManagement.domainLayer.exceptions.VehicleTypeNotSupportedException;
+
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Branch {
@@ -18,7 +22,7 @@ public class Branch {
 
     boolean addVehicle(Vehicle vehicle) {
         if(!possibleVehicleTypes.contains(vehicle.getVehicleType()))
-            return false;
+            throw new VehicleTypeNotSupportedException(String.format("Vehicle type %s not supported for branch %s", vehicle.getVehicleType(), branchName));
         return vehicles.add(vehicle);
     }
 
@@ -27,7 +31,7 @@ public class Branch {
     }
 
 
-    List<Vehicle> getVehiclesForVehicleTypeAndTimeSlot(TimeSlot timeSlotToUnavailable, VehicleType vehicleType) {
+    List<Vehicle> getVehiclesByTypeAndTimeSlot(TimeSlot timeSlotToUnavailable, VehicleType vehicleType) {
         List<Vehicle> vehiclesForRequiredType = vehicles.stream()
                 .filter(vehicle -> vehicle.getVehicleType().equals(vehicleType))
                 .collect(Collectors.toList());
@@ -65,5 +69,14 @@ public class Branch {
 
     public String getBranchName() {
         return branchName;
+    }
+
+    public Vehicle getVehicle(String vehicleId) {
+      Optional<Vehicle> vehicle = vehicles.stream()
+              .filter(v -> v.getId().equals(vehicleId))
+              .findFirst();
+      if(vehicle.isPresent())
+          return vehicle.get();
+      throw new NoVehicleFoundException(String.format("No vehicle found with vehicle Id %s in branch %s", vehicleId, branchName));
     }
 }

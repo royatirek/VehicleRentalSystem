@@ -8,6 +8,6 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 public class AddBranchInputDto {
-    String branchName;
-    List<String> vehicleTypes;
+    private String branchName;
+    private List<String> vehicleTypes;
 }

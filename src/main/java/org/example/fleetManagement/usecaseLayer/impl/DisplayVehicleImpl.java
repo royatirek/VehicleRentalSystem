@@ -18,7 +18,7 @@ public class DisplayVehicleImpl implements DisplayVehicle {
     @Override
     public DisplayVehicleOutputDto displayVehicle(DisplayVehicleInputDto displayVehicleInputDto) {
         Branch branch = branchManager.getBranchByName(displayVehicleInputDto.getBranchName());
-        List<String> vehicleIds = branchManager.getAllVehicles(branch, new TimeSlot(displayVehicleInputDto.getStartTime(), displayVehicleInputDto.getEndTime()))
+        List<String> vehicleIds = branchManager.getVehicles(branch, new TimeSlot(displayVehicleInputDto.getStartTime(), displayVehicleInputDto.getEndTime()))
                 .stream()
                 .map(vehicle -> vehicle.getId())
                 .collect(Collectors.toList());
