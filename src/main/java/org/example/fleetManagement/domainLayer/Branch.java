@@ -1,7 +1,6 @@
 package org.example.fleetManagement.domainLayer;
 
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,38 +27,40 @@ public class Branch {
     }
 
 
-    List<Vehicle> getAllAvailableVehiclesForVehicleTypeAndTimeSlot(TimeSlot timeSlotToUnavailable, VehicleType vehicleType) {
+    List<Vehicle> getVehiclesForVehicleTypeAndTimeSlot(TimeSlot timeSlotToUnavailable, VehicleType vehicleType) {
         List<Vehicle> vehiclesForRequiredType = vehicles.stream()
                 .filter(vehicle -> vehicle.getVehicleType().equals(vehicleType))
                 .collect(Collectors.toList());
-        return getAllAvailableVehiclesForTimeSlot(timeSlotToUnavailable, vehiclesForRequiredType);
+        return getVehiclesForTimeSlot(timeSlotToUnavailable, vehiclesForRequiredType);
     }
 
-    private List<Vehicle> getAllAvailableVehiclesForTimeSlot(TimeSlot timeSlotToUnavailable, List<Vehicle> vehicles) {
-        List<Vehicle> listOfAvailableVehicles = new LinkedList<>();
-        for (Vehicle vehicle : vehicles) {
-            boolean isTimeIntersecting = false;
-            for (TimeSlot timeSlot : vehicle.getNotAvailabilities()) {
-                if (isTimeSlotIntersecting(timeSlotToUnavailable, timeSlot)) {
-                    isTimeIntersecting = true;
-                    break;
-                }
-            }
-            if (!isTimeIntersecting)
-                listOfAvailableVehicles.add(vehicle);
-        }
+    private List<Vehicle> getVehiclesForTimeSlot(TimeSlot timeSlotToUnavailable, List<Vehicle> vehicles) {
+        List<Vehicle> listOfAvailableVehicles = vehicles.stream()
+                .filter(vehicle -> !isTimeSlotIntersecting(vehicle.getNotAvailabilities(), timeSlotToUnavailable))
+                .collect(Collectors.toList());
         return listOfAvailableVehicles;
     }
 
-    private boolean isTimeSlotIntersecting(TimeSlot timeSlotToUnavailable, TimeSlot timeSlot) {
+    private boolean isTimeSlotIntersecting(List<NotAvailabilityTimeSlot> timeSlots , TimeSlot timeSlotToUnavailable) {
+        boolean isTimeSlotIntersecting = false;
+        for(TimeSlot timeSlot : timeSlots) {
+            if (isTimeSlotIntersecting(timeSlot, timeSlotToUnavailable)) {
+                isTimeSlotIntersecting = true;
+                break;
+            }
+        }
+        return isTimeSlotIntersecting;
+    }
+
+    private boolean isTimeSlotIntersecting(TimeSlot timeSlot, TimeSlot timeSlotToUnavailable) {
         return (timeSlot.getStartTime() <= timeSlotToUnavailable.getStartTime() && timeSlot.getEndTime() > timeSlotToUnavailable.getStartTime())
                 ||
                 (timeSlotToUnavailable.getStartTime() <= timeSlot.getStartTime() && timeSlotToUnavailable.getEndTime() > timeSlot.getStartTime()) ;
     }
 
 
-    List<Vehicle> getAllAvailableVehiclesForTimeSlot(TimeSlot timeSlotToUnavailable) {
-        return getAllAvailableVehiclesForTimeSlot(timeSlotToUnavailable, this.vehicles);
+    List<Vehicle> getVehiclesForTimeSlot(TimeSlot timeSlotToUnavailable) {
+        return getVehiclesForTimeSlot(timeSlotToUnavailable, this.vehicles);
     }
 
     public String getBranchName() {

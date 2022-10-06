@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="610ef99b-7781-4270-a091-f5de9a9ca664" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/AddBranchAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/AddBranchAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/AddVehicleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/AddVehicleAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/BookVehicleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/BookVehicleAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/DisplayVehicleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/adapters/DisplayVehicleAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/AddBranchCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/AddBranchCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/AddVehicleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/AddVehicleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/BookVehicleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/BookVehicleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/DisplayVehicleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/commands/impl/DisplayVehicleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/AddBranchCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/AddBranchCommandExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/AddVehicleCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/AddVehicleCommandExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/BookVehicleCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/BookVehicleCommandExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/DisplayVehicleCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/executers/DisplayVehicleCommandExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,16 +201,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java</url>
           <line>38</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>

@@ -29,12 +29,12 @@ public class BranchManagerImpl implements BranchManager {
 
     @Override
     public List<Vehicle> getAllVehicles(Branch branch, TimeSlot timeSlot) {
-        return vehicleOrderingStrategy.order(branch.getAllAvailableVehiclesForTimeSlot(timeSlot));
+        return vehicleOrderingStrategy.order(branch.getVehiclesForTimeSlot(timeSlot));
     }
 
     @Override
     public Vehicle getVehicle(Branch branch, VehicleType vehicleType, TimeSlot timeSlot) {
-        Vehicle vehicle =  vehicleSelectionStrategy.getSelectedVehicle(branch.getAllAvailableVehiclesForVehicleTypeAndTimeSlot(timeSlot, vehicleType));
+        Vehicle vehicle =  vehicleSelectionStrategy.getSelectedVehicle(branch.getVehiclesForVehicleTypeAndTimeSlot(timeSlot, vehicleType));
         branch.makeVehicleNonAvailaible(vehicle, new NotAvailabilityTimeSlot(timeSlot.getStartTime(), timeSlot.getEndTime()));
         return vehicle;
     }
