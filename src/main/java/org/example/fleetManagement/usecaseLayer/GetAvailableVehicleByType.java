@@ -1,0 +1,8 @@
+package org.example.fleetManagement.usecaseLayer;
+
+import org.example.fleetManagement.usecaseLayer.dtos.GetAvailableVehicleByTypeInputDto;
+import org.example.fleetManagement.usecaseLayer.dtos.GetAvailableVehicleByTypeOutputDto;
+
+public interface GetAvailableVehicleByType {
+    GetAvailableVehicleByTypeOutputDto getAvailableVehicleByType(GetAvailableVehicleByTypeInputDto getAvailableVehicleByTypeOutputDto);
+}
