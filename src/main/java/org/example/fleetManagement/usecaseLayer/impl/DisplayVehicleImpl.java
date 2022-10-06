@@ -3,6 +3,7 @@ package org.example.fleetManagement.usecaseLayer.impl;
 import lombok.AllArgsConstructor;
 import org.example.fleetManagement.domainLayer.Branch;
 import org.example.fleetManagement.domainLayer.BranchManager;
+import org.example.fleetManagement.domainLayer.TimeSlot;
 import org.example.fleetManagement.usecaseLayer.DisplayVehicle;
 import org.example.fleetManagement.usecaseLayer.dtos.DisplayVehicleInputDto;
 import org.example.fleetManagement.usecaseLayer.dtos.DisplayVehicleOutputDto;
@@ -17,7 +18,7 @@ public class DisplayVehicleImpl implements DisplayVehicle {
     @Override
     public DisplayVehicleOutputDto displayVehicle(DisplayVehicleInputDto displayVehicleInputDto) {
         Branch branch = branchManager.getBranchByName(displayVehicleInputDto.getBranchName());
-        List<String> vehicleIds = branchManager.getAllVehicles(branch)
+        List<String> vehicleIds = branchManager.getAllVehicles(branch, new TimeSlot(displayVehicleInputDto.getStartTime(), displayVehicleInputDto.getEndTime()))
                 .stream()
                 .map(vehicle -> vehicle.getId())
                 .collect(Collectors.toList());

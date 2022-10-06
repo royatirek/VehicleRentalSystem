@@ -9,7 +9,7 @@ public interface BranchManager {
 
     Branch getBranchByName(String id);
 
-    List<Vehicle> getAllVehicles(Branch branch);
+    List<Vehicle> getAllVehicles(Branch branch, TimeSlot timeSlot);
 
-    Vehicle getAllAvailableVehicles(Branch branch, TimeSlot timeSlot);
+    Vehicle getAllAvailableVehicles(Branch branch,VehicleType vehicleType, TimeSlot timeSlot);
 }

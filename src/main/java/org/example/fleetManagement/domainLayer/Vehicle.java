@@ -1,7 +1,6 @@
 package org.example.fleetManagement.domainLayer;
 
 import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
@@ -36,6 +35,10 @@ public class Vehicle {
 
     List<NotAvailabilityTimeSlot> getNotAvailabilities() {
         return notAvailabilities.stream().collect(Collectors.toList());
+    }
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
     }
 
 }
