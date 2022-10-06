@@ -33,6 +33,7 @@ public class Main {
             String[] commandArguments = input.trim().split(" ");
             Command command = InputCommandFactory.getCommand(commandArguments[0].trim());
             command.setCommandArguments(commandArguments);
+            command.execute();
             input = reader.readLine();
         }
     }
