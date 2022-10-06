@@ -14,7 +14,7 @@ public class GetAvailableVehicleByTypeImpl implements GetAvailableVehicleByType 
     @Override
     public GetAvailableVehicleByTypeOutputDto getAvailableVehicleByType(GetAvailableVehicleByTypeInputDto getAvailableVehicleByTypeInputDto) {
         Branch branch = branchManager.getBranchByName(getAvailableVehicleByTypeInputDto.getBranchName());
-        Vehicle vehicle = branchManager.getAllAvailableVehicles(branch, VehicleType.valueOf(getAvailableVehicleByTypeInputDto.getVehicleType()), new TimeSlot(getAvailableVehicleByTypeInputDto.getAvailabilityStartTime(), getAvailableVehicleByTypeInputDto.getAvailabilityEndTime()));
+        Vehicle vehicle = branchManager.getVehicle(branch, VehicleType.valueOf(getAvailableVehicleByTypeInputDto.getVehicleType()), new TimeSlot(getAvailableVehicleByTypeInputDto.getAvailabilityStartTime(), getAvailableVehicleByTypeInputDto.getAvailabilityEndTime()));
         Integer timeBookedFor = getAvailableVehicleByTypeInputDto.getAvailabilityEndTime() - getAvailableVehicleByTypeInputDto.getAvailabilityStartTime();
         return new GetAvailableVehicleByTypeOutputDto(vehicle.getId(), vehicle.getPrice().getAmount() * timeBookedFor);
     }

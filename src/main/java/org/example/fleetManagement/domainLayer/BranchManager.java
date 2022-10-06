@@ -11,5 +11,5 @@ public interface BranchManager {
 
     List<Vehicle> getAllVehicles(Branch branch, TimeSlot timeSlot);
 
-    Vehicle getAllAvailableVehicles(Branch branch, VehicleType vehicleType, TimeSlot timeSlot);
+    Vehicle getVehicle(Branch branch, VehicleType vehicleType, TimeSlot timeSlot);
 }

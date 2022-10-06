@@ -14,7 +14,10 @@ public class DisplayVehicleAdapter implements DisplayVehicleCommandExecuter {
     private DisplayVehicle displayVehicle;
 
     @Override
-    public List<String> displayDisplay(String branchName, Integer startTime, Integer endTime) {
+    public List<String> displayDisplay(String[] commandArguments) {
+        String branchName = commandArguments[1];
+        Integer startTime = Integer.parseInt(commandArguments[2]);
+        Integer endTime = Integer.parseInt(commandArguments[3]);
         DisplayVehicleInputDto displayVehicleInputDto = new DisplayVehicleInputDto(branchName, startTime, endTime);
         return displayVehicle.displayVehicle(displayVehicleInputDto).getVehicleIds();
     }

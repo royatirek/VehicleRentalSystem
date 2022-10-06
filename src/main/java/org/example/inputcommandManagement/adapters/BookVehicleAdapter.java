@@ -11,7 +11,10 @@ import org.example.inputcommandManagement.executers.BookVehicleCommandExecuter;
 public class BookVehicleAdapter implements BookVehicleCommandExecuter {
     private BookVehicle bookVehicle;
     @Override
-    public Integer bookVehicle(String branchName, String vehicleType, BookedTimeSlots bookedTimeSlots) {
+    public Integer bookVehicle(String[] commandArguments) {
+        String branchName = commandArguments[1];
+        String vehicleType = commandArguments[2];
+        BookedTimeSlots bookedTimeSlots = new BookedTimeSlots(Integer.parseInt(commandArguments[3]), Integer.parseInt(commandArguments[4]));
         BookVehicleOutputDto bookVehicleOutputDto =  bookVehicle.bookVehicle(new BookVehicleInputDto(branchName, vehicleType, bookedTimeSlots));
         return bookVehicleOutputDto.getPrice();
     }

@@ -13,10 +13,6 @@ public class AddVehicleCommand extends Command {
 
     @Override
     public void execute() {
-        String branchName = commandArguments[1];
-        String vehicleType = commandArguments[2];
-        String vehicleId = commandArguments[3];
-        Integer price = Integer.parseInt(commandArguments[4]);
-        System.out.println(addVehicleCommandExecuter.addVehicle(branchName, vehicleType, vehicleId, price));
+        System.out.println(addVehicleCommandExecuter.addVehicle(commandArguments));
     }
 }

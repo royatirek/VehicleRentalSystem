@@ -33,7 +33,7 @@ public class BranchManagerImpl implements BranchManager {
     }
 
     @Override
-    public Vehicle getAllAvailableVehicles(Branch branch, VehicleType vehicleType, TimeSlot timeSlot) {
+    public Vehicle getVehicle(Branch branch, VehicleType vehicleType, TimeSlot timeSlot) {
         Vehicle vehicle =  vehicleSelectionStrategy.getSelectedVehicle(branch.getAllAvailableVehiclesForVehicleTypeAndTimeSlot(timeSlot, vehicleType));
         branch.makeVehicleNonAvailaible(vehicle, new NotAvailabilityTimeSlot(timeSlot.getStartTime(), timeSlot.getEndTime()));
         return vehicle;
