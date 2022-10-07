@@ -4,7 +4,6 @@ import org.example.inputcommandManagement.InputCommandFactory;
 import org.example.inputcommandManagement.commands.Command;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {

@@ -71,7 +71,7 @@ public class Branch {
         return branchName;
     }
 
-    public Vehicle getVehicle(String vehicleId) {
+    Vehicle getVehicle(String vehicleId) {
       Optional<Vehicle> vehicle = vehicles.stream()
               .filter(v -> v.getId().equals(vehicleId))
               .findFirst();

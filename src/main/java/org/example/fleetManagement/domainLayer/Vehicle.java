@@ -1,10 +1,13 @@
 package org.example.fleetManagement.domainLayer;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
+@EqualsAndHashCode
 public class Vehicle {
     private final String id;
     private final Price price;

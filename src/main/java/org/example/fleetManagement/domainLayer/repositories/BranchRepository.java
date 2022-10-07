@@ -5,6 +5,6 @@ import org.example.fleetManagement.domainLayer.Branch;
 public interface BranchRepository {
     boolean addBranch(Branch branch);
 
-    Branch getBranchById(String id);
+    Branch getBranchByName(String id);
 
 }

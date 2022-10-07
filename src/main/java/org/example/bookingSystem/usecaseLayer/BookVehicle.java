@@ -4,5 +4,5 @@ import org.example.bookingSystem.usecaseLayer.dto.BookVehicleInputDto;
 import org.example.bookingSystem.usecaseLayer.dto.BookVehicleOutputDto;
 
 public interface BookVehicle {
-    public BookVehicleOutputDto bookVehicle(BookVehicleInputDto bookVehicleInputDto);
+    BookVehicleOutputDto bookVehicle(BookVehicleInputDto bookVehicleInputDto);
 }

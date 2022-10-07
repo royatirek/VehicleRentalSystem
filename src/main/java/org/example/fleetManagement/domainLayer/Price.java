@@ -8,10 +8,10 @@ import lombok.Getter;
 @EqualsAndHashCode
 @Getter
 public class Price implements Comparable<Price>{
-    private final Integer amount;
+    private final Integer amountPerHour;
 
     @Override
     public int compareTo(Price price) {
-        return this.amount.compareTo(price.amount);
+        return this.amountPerHour.compareTo(price.amountPerHour);
     }
 }

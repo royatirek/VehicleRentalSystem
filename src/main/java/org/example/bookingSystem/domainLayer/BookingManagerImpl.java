@@ -1,6 +1,7 @@
 package org.example.bookingSystem.domainLayer;
 
 import lombok.AllArgsConstructor;
+import org.example.bookingSystem.domainLayer.repository.BookingRepository;
 import org.example.fleetManagement.usecaseLayer.BlockTimeSlot;
 import org.example.fleetManagement.usecaseLayer.dtos.BlockTimeSlotInputDto;
 import org.example.fleetManagement.usecaseLayer.GetAvailableVehicleByType;
@@ -21,7 +22,8 @@ public class BookingManagerImpl implements BookingManager {
         GetAvailableVehicleByTypeInputDto getAvailableVehicleByTypeInputDto = new GetAvailableVehicleByTypeInputDto(branchName, vehicleType, bookedTimeSlots.getStartTime(), bookedTimeSlots.getEndTime());
         GetAvailableVehicleByTypeOutputDto getAvailableVehicleByTypeOutputDto =  getAvailableVehicleByType.getAvailableVehicleByType(getAvailableVehicleByTypeInputDto);
         Vehicle vehicle = new Vehicle(getAvailableVehicleByTypeOutputDto.getVehicleId());
-        Booking booking = new Booking(vehicle, bookedTimeSlots, LocalDateTime.now(),getAvailableVehicleByTypeOutputDto.getPrice());
+        Integer timeBookedFor = getAvailableVehicleByTypeInputDto.getAvailabilityEndTime() - getAvailableVehicleByTypeInputDto.getAvailabilityStartTime();
+        Booking booking = new Booking(vehicle, bookedTimeSlots, LocalDateTime.now(), getAvailableVehicleByTypeOutputDto.getPricePerHour() * timeBookedFor);
         bookingRepository.createBooking(booking);
         blockTimeSlot(new BlockTimeSlotInputDto(branchName, getAvailableVehicleByTypeOutputDto.getVehicleId(), bookedTimeSlots.getStartTime(), bookedTimeSlots.getEndTime()));
         return booking;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.bookingSystem.domainLayer.BookingManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-07T00:33:25" hostname="HS-14048956.local" time="0.059">
+  <properties/>
+  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.054"/>
+  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenTimeSlotShouldBeBlocked()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.001"/>
+  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

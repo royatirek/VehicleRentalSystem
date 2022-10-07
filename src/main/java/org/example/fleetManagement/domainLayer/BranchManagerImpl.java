@@ -24,7 +24,7 @@ public class BranchManagerImpl implements BranchManager {
     }
     @Override
     public Branch getBranchByName(String branchName) {
-        return branchRepository.getBranchById(branchName);
+        return branchRepository.getBranchByName(branchName);
     }
 
     @Override

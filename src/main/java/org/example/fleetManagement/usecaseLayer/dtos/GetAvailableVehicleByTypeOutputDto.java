@@ -7,5 +7,5 @@ import lombok.Getter;
 @Getter
 public class GetAvailableVehicleByTypeOutputDto {
     private String vehicleId;
-    private Integer price;
+    private Integer pricePerHour;
 }

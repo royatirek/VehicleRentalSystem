@@ -2,7 +2,7 @@ package org.example.inputcommandManagement;
 
 import org.example.bookingSystem.domainLayer.BookingManager;
 import org.example.bookingSystem.domainLayer.BookingManagerImpl;
-import org.example.bookingSystem.domainLayer.BookingRepositoryImpl;
+import org.example.bookingSystem.domainLayer.repository.BookingRepositoryImpl;
 import org.example.bookingSystem.usecaseLayer.impl.BookVehicleImpl;
 import org.example.fleetManagement.domainLayer.BranchManager;
 import org.example.fleetManagement.domainLayer.BranchManagerImpl;
@@ -50,6 +50,6 @@ public class InputCommandFactory {
     }
 
     public static Command getCommand(String commandType) {
-        return mapOfStringAndCommands.get(commandType);
+        return mapOfStringAndCommands.get(commandType.trim());
     }
 }
