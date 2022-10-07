@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.bookingSystem.domainLayer.BookingManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-07T00:42:20" hostname="HS-14048956.local" time="0.074">
+<testsuite name="org.example.bookingSystem.domainLayer.BookingManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-07T00:56:51" hostname="HS-14048956.local" time="0.067">
   <properties/>
-  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.068"/>
+  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.062"/>
   <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenTimeSlotShouldBeBlocked()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.001"/>
-  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.001"/>
+  <testcase name="givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented()" classname="org.example.bookingSystem.domainLayer.BookingManagerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

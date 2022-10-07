@@ -5,22 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610ef99b-7781-4270-a091-f5de9a9ca664" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/strategies/impl/VehicleLowestPriceSelectionStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/strategies/impl/VehicleOrderingByPriceStrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6557bcd248477c36645669f2c70aed78e46e959" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/geektrust.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/geektrust.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.example.bookingSystem.domainLayer.BookingManagerTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.example.bookingSystem.domainLayer.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.example.bookingSystem.domainLayer.BookingManagerTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,11 +122,12 @@
       <recent name="org.example.fleetManagement" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.fleetManagement.domainLayer.strategies.impl" />
       <recent name="org.example.bookingSystem.domainLayer" />
       <recent name="org.example.fleetManagement.domainLayer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned">
+  <component name="RunManager" selected="Gradle.VehicleLowestPriceSelectionStrategyTest.givenEmptyListOfVehicles_whenCalled_thenThrowException">
     <configuration name="BookingManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,29 +142,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.example.bookingSystem.domainLayer.BookingManagerTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.bookingSystem.domainLayer.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -193,7 +174,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleLowestPriceSelectionStrategyTest.givenEmptyListOfVehicles_whenCalled_thenThrowException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -206,7 +187,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.fleetManagement.domainLayer.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned&quot;" />
+            <option value="&quot;org.example.fleetManagement.domainLayer.strategies.impl.VehicleLowestPriceSelectionStrategyTest.givenEmptyListOfVehicles_whenCalled_thenThrowException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,34 +197,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleRental [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleLowestPriceSelectionStrategyTest.givenListOfVehicles_whenCalled_thenReturnLowestCostVehicle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.fleetManagement.domainLayer.strategies.impl.VehicleLowestPriceSelectionStrategyTest.givenListOfVehicles_whenCalled_thenReturnLowestCostVehicle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VehicleOrderingByPriceStrategyTest.givenListOfVehicles_whenCalled_thenReturnInAscendingOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.fleetManagement.domainLayer.strategies.impl.VehicleOrderingByPriceStrategyTest.givenListOfVehicles_whenCalled_thenReturnInAscendingOrder&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned" />
-        <item itemvalue="Gradle.VehicleRental [build]" />
+        <item itemvalue="Gradle.VehicleLowestPriceSelectionStrategyTest.givenEmptyListOfVehicles_whenCalled_thenThrowException" />
+        <item itemvalue="Gradle.VehicleLowestPriceSelectionStrategyTest.givenListOfVehicles_whenCalled_thenReturnLowestCostVehicle" />
+        <item itemvalue="Gradle.VehicleOrderingByPriceStrategyTest.givenListOfVehicles_whenCalled_thenReturnInAscendingOrder" />
         <item itemvalue="Gradle.BookingManagerTest" />
         <item itemvalue="Gradle.BranchManagerTest" />
-        <item itemvalue="Gradle.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented" />
       </list>
     </recent_temporary>
   </component>

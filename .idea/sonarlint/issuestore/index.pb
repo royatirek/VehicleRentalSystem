@@ -5,8 +5,6 @@ Rsrc/main/java/org/example/bookingSystem/usecaseLayer/dto/BookVehicleOutputDto.j
 Java.gitignore,6/9/696d387f2ab9dbba29d4e43e83b69bbc2e5d936e
 s
 Csrc/main/java/org/example/fleetManagement/domainLayer/TimeSlot.java,c/6/c6c5b211f9febf806761d90a65f8df5c2ef8eaf3
-ç
-]src/main/java/org/example/fleetManagement/domainLayer/strategies/VehicleOrderingStrategy.java,e/6/e6557bcd248477c36645669f2c70aed78e46e959
 é
 ^src/main/java/org/example/fleetManagement/domainLayer/strategies/VehicleSelectionStrategy.java,4/0/404ef963bef2c6ecf9e40a830abb08546b5dd7ec
 X
