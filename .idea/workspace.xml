@@ -5,58 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610ef99b-7781-4270-a091-f5de9a9ca664" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/exceptions/NoBranchFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c68c07dc15d62a6f4963b716ab50b3b0671eb84" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f229fc0985a65a7c51214aa12d0e553bd2d4fd9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/420188acc19e3b60de5bc66e6ec84946677bf553" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/493d08c828329812a32f1e4150f7bf332a2913d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88d3b0483798b3fac7e5be3af0c65c8e96cbf8d6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/bookingSystem/domainLayer/BookingManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/bookingSystem/domainLayer/BookingManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/bookingSystem/domainLayer/BookingRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/bookingSystem/domainLayer/BookingRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/Branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/BranchManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/BranchManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/repositories/BranchRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/repositories/BranchRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/repositories/impl/BranchRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/domainLayer/repositories/impl/BranchRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/usecaseLayer/BlockTimeSlot.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/usecaseLayer/BlockTimeSlot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/usecaseLayer/BlockTimeSlotInputDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/usecaseLayer/impl/BlockTimeSlotImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/fleetManagement/usecaseLayer/impl/BlockTimeSlotImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/inputcommandManagement/InputCommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/inputcommandManagement/InputCommandFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/geektrust.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/geektrust.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/BookingManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/BookingManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/BookingRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/repository/BookingRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/domainLayer/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/usecaseLayer/BookVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bookingSystem/usecaseLayer/BookVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/BranchManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/BranchManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/repositories/BranchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/repositories/BranchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/repositories/impl/BranchRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/domainLayer/repositories/impl/BranchRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/usecaseLayer/impl/GetAvailableVehicleByTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fleetManagement/usecaseLayer/impl/GetAvailableVehicleByTypeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/InputCommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/inputcommandManagement/InputCommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.example.bookingSystem.domainLayer.BookingManagerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.example.bookingSystem.domainLayer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.example.bookingSystem.domainLayer.BookingManagerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +123,8 @@
       <recent name="org.example.fleetManagement.domainLayer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented">
-    <configuration name="BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned">
+    <configuration name="BookingManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.bookingSystem.domainLayer.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted&quot;" />
+            <option value="&quot;org.example.bookingSystem.domainLayer.BookingManagerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,7 +170,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenTimeSlotShouldBeBlocked (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BranchManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -219,7 +183,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.bookingSystem.domainLayer.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenTimeSlotShouldBeBlocked&quot;" />
+            <option value="&quot;org.example.fleetManagement.domainLayer.BranchManagerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,7 +193,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BranchManagerTest.givenBranchExistsWithNoVehicle_whenQueried_thenThrowException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +206,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.fleetManagement.domainLayer.BranchManagerTest.givenBranchExistsWithNoVehicle_whenQueried_thenThrowException&quot;" />
+            <option value="&quot;org.example.fleetManagement.domainLayer.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -252,36 +216,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BranchManagerTest.givenBranchWithOneCarAndNoBookings_whenVanIsQueried_thenReturnNothing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleRental [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.fleetManagement.domainLayer.BranchManagerTest.givenBranchWithOneCarAndNoBookings_whenVanIsQueried_thenReturnNothing&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BranchManagerTest.givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned" />
+        <item itemvalue="Gradle.VehicleRental [build]" />
+        <item itemvalue="Gradle.BookingManagerTest" />
+        <item itemvalue="Gradle.BranchManagerTest" />
         <item itemvalue="Gradle.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented" />
-        <item itemvalue="Gradle.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenItShouldBePersisted" />
-        <item itemvalue="Gradle.BranchManagerTest.givenBranchWithOneCarAndNoBookings_whenVanIsQueried_thenReturnNothing" />
-        <item itemvalue="Gradle.BookingManagerTest.givenAvailableVehicle_whenBookingIsCreated_thenTimeSlotShouldBeBlocked (1)" />
-        <item itemvalue="Gradle.BranchManagerTest.givenBranchExistsWithNoVehicle_whenQueried_thenThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -347,17 +309,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>37</line>
+          <line>38</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -372,7 +334,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -382,7 +344,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -427,13 +389,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/bookingSystem/domainLayer/BookingManagerTest.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="41" />
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
@@ -446,7 +408,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/fleetManagement/domainLayer/BranchManagerTest.java</url>
-          <line>70</line>
+          <line>71</line>
           <properties class="org.example.fleetManagement.domainLayer.BranchManagerTest" method="givenBranchExistsWithOneVehicleWithNoBooking_whenAvailableVehicleQueried_thenItShouldReturnOneVehicle">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

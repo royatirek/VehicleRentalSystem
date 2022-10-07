@@ -41,7 +41,6 @@ class BookingManagerTest {
     @Test
     void givenAvailableVehicle_whenBookingIsCreated_thenRateBePerHourMultipliedByHoursRented(){
         when(getAvailableVehicleByType.getAvailableVehicleByType(any())).thenReturn(new GetAvailableVehicleByTypeOutputDto("V1", 100));
-        ArgumentCaptor<Booking> bookingArgumentCaptor = ArgumentCaptor.forClass(Booking.class);
         Booking booking = bookingManager.createBooking("B1", VehicleType.VAN.toString(), new BookedTimeSlots(1, 6));
         assertEquals(500, (int) booking.getTotal());
     }

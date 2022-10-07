@@ -15,6 +15,7 @@ import org.mockito.ArgumentCaptor;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -105,6 +106,18 @@ class BranchManagerTest {
         ArgumentCaptor<List<Vehicle>> vehiclesCapturer = ArgumentCaptor.forClass((Class) List.class);
         verify(vehicleSelectionStrategy, times(1)).getSelectedVehicle(vehiclesCapturer.capture());
         assertEquals(0, vehiclesCapturer.getValue().size());
+
+    }
+
+    @Test
+    void givenBranchWithTwoCarAndNoBookings_whenCarIsQueried_then2VehiclesIsReturned() {
+        List<Vehicle> vehicles = Arrays.asList(new Vehicle("V1", new Price(100), VehicleType.CAR), new Vehicle("V2", new Price(100), VehicleType.CAR));
+        Branch branch = new Branch("B1", vehicles, Arrays.asList(VehicleType.CAR));
+        branchManager.getVehicle(branch, VehicleType.CAR, new TimeSlot(1,2));
+        ArgumentCaptor<List<Vehicle>> vehiclesCapturer = ArgumentCaptor.forClass((Class) List.class);
+        verify(vehicleSelectionStrategy, times(1)).getSelectedVehicle(vehiclesCapturer.capture());
+        List<String> vehiclesReturned = vehiclesCapturer.getValue().stream().map(Vehicle::getId).collect(Collectors.toList());
+        assertEquals(Arrays.asList("V1","V2"), vehiclesReturned);
 
     }
 
